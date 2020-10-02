@@ -18,7 +18,15 @@ a:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
-
+/* add hover on button */
+.hover {
+  transition: 0.5s;
+}
+.hover:hover {
+  background-color: grey;
+  border-color: grey;
+  color: white;
+}
 
 /*
  * Base structure
@@ -120,7 +128,15 @@ body {
   padding: 10px 20px;
   font-weight: bold;
 }
-
+/* change font family */
+.cover-heading {
+  font-family: 'Raleway';
+  color: #a9a9a9;
+}
+.lead {
+  font-family: 'Poppins';
+  font-size: 18px;
+}
 
 /*
  * Footer
@@ -156,6 +172,10 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  /* change font-size for name */
+  .cover-heading{
+    font-size: 60px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -182,5 +202,12 @@ body {
 @media (min-width: 1200px) {
   body {
     background-image: url("../images/bgdark_large.jpg");
+  }
+}
+
+/* responsive cover */
+@media (max-width:600px){
+  .cover {
+    margin-top: 100px;
   }
 }
